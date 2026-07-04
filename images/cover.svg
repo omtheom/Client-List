@@ -10,5 +10,5 @@
   <rect x="354.7" y="394.7" width="90.5" height="90.5" fill="none" stroke="#8A6F2E" stroke-width="1.2" opacity="0.55" transform="rotate(45 400.0 440.0)"/>
   <text x="400.0" y="520.0" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="25.6" letter-spacing="3.2" fill="#111111"><tspan x="400.0" dy="0">BOOK COVER</tspan></text>
   <text x="400.0" y="555.8" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="16.8" fill="#6B6459"><tspan x="400.0" dy="0">Client List hardback — deep black cover, single diamond</tspan><tspan x="400.0" dy="25.200000000000003">motif, classical serif title</tspan></text>
-  <text x="400.0" y="976" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12.8" letter-spacing="1" fill="#6B6459" opacity="0.7">REPLACE THIS FILE · 4:5 PORTRAIT</text>
+  <text x="400.0" y="976" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12.8" letter-spacing="1" fill="#6B6459" opacity="0.7">REPLACE THIS FILE · 4:5</text>
 </svg>
