@@ -181,16 +181,6 @@ nav {
   justify-content: flex-end;
 }
 
-.hero-mark {
-  width: clamp(10px, 1.4vw, 14px);
-  height: clamp(10px, 1.4vw, 14px);
-  border: 1px solid rgba(138, 111, 46, 0.9);
-  transform: rotate(45deg);
-  margin-bottom: clamp(1.6rem, 3vw, 2.4rem);
-  opacity: 0;
-  animation: fadeUp 1.2s ease 0.1s forwards;
-}
-
 .hero-eyebrow {
   font-family: 'Cormorant Garamond', serif;
   font-size: clamp(0.7rem, 0.9vw, 0.78rem);
@@ -813,7 +803,7 @@ footer {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
-  .hero-mark, .hero-eyebrow, .hero-title, .hero-sub, .hero-actions, .hero-scroll-hint { opacity: 1; }
+  .hero-eyebrow, .hero-title, .hero-sub, .hero-actions, .hero-scroll-hint { opacity: 1; }
 }
 
 /* ============================================================
