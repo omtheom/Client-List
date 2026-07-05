@@ -606,6 +606,14 @@ h2.title em { font-style: italic; font-weight: 300; }
   background-position: center;
 }
 
+/* Same 4:3 frame as the photo slots, for the one video step. */
+video.process-media {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 .process-num {
   display: block;
   font-family: 'Cormorant Garamond', serif;
