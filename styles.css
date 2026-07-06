@@ -596,6 +596,87 @@ h2.title em { font-style: italic; font-weight: 300; }
   background-position: center;
 }
 
+/* Photos taller than their 4:3 frame get a click-to-expand affordance. */
+.process-media-expandable {
+  cursor: zoom-in;
+  position: relative;
+}
+
+.process-media-expandable::after {
+  content: 'View Full Image';
+  position: absolute;
+  bottom: 14px;
+  right: 14px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--paper);
+  background: rgba(17, 17, 17, 0.65);
+  padding: 0.5rem 0.9rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.process-media-expandable:hover::after,
+.process-media-expandable:focus-visible::after {
+  opacity: 1;
+}
+
+@media (hover: none) {
+  .process-media-expandable::after { opacity: 1; }
+}
+
+/* ── IMAGE LIGHTBOX ── */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: rgba(10, 10, 10, 0.94);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(1rem, 4vw, 3rem);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.lightbox.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.lightbox-img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.lightbox-close {
+  position: absolute;
+  top: clamp(1rem, 3vw, 2rem);
+  right: clamp(1rem, 3vw, 2rem);
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(251, 250, 246, 0.3);
+  background: transparent;
+  color: var(--paper);
+  font-size: 1.8rem;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.3s ease;
+}
+
+.lightbox-close:hover { border-color: rgba(251, 250, 246, 0.8); }
+
 /* Same 4:3 frame as the photo slots, for the one video step. */
 video.process-media {
   width: 100%;
